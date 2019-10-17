@@ -4,6 +4,9 @@
 $ mkdir bigdata-class2
 $ cd bigdata-class2 
 $ sudo docker pull joway/hadoop-cluster # download Hadoop image from dockerhub
-$ git clone https://github.com/joway/hadoop-cluster-docker get code from github
+$ git clone https://github.com/joway/hadoop-cluster-docker 
 $ sudo docker network create --driver=bridge hadoop 
+$ cd hadoop-cluster-docker
+$ sudo ./start-container.sh # enter docker container
+$ ./start-hadoop.sh # run hadoop
 ```
